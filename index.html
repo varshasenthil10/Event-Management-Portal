@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Management Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Event Management Portal</h1>
+
+<div class="dashboard">
+
+<div class="card">
+<h3>Total Events</h3>
+<h2 id="totalEvents">0</h2>
+</div>
+
+<div class="card">
+<h3>Total Registrations</h3>
+<h2 id="totalRegistrations">0</h2>
+</div>
+
+</div>
+
+<input type="text" id="eventName" placeholder="Event Name">
+
+<input type="date" id="eventDate">
+
+<input type="text" id="organizer" placeholder="Organizer">
+
+<button onclick="addEvent()">Create Event</button>
+
+<br><br>
+
+<input type="text"
+id="search"
+placeholder="Search Event..."
+onkeyup="searchEvent()">
+
+<br><br>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Event</th>
+<th>Date</th>
+<th>Organizer</th>
+<th>Registrations</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="eventTable"></tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
